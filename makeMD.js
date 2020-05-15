@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const commentKey = '[//]: # (fragment-list)\n'
+const commentKey = '\n\n[//]: # (fragment-list)\n\n'
 
 
 let md = fs.readFileSync('./README.md').toString().split(commentKey);
